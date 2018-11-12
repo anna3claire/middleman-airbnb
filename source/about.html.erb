@@ -9,10 +9,15 @@ title: Le Wagon - Middleman - Our Team
         <li>
           <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
       <h3><%= gh_username.capitalize %></h3>
-    </li>
-  <% end %>
-</ul>
-</div>
+<p>
+  <% link_to "https://github.com/#{gh_username}", target: "_blank" do %>
+              <i class="fab fa-github"></i> <%= gh_username %>
+            <% end %>
+          </p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </div>
 
 
